@@ -1,6 +1,6 @@
 # Astrology API OpenAPI Specification
 
-The OpenAPI 3.1 specification for the RoxyAPI astrology API: 258+ endpoints across 18+ insight domains on one API key, the data layer for insight apps. It covers Western astrology, Vedic astrology, forecast, human design, Chinese astrology, feng shui, Mesoamerican astrology, vastu, numerology, kabbalah, tarot, biorhythm, ayurveda, I-Ching, crystals, dreams, angel numbers and location.
+The OpenAPI 3.1 specification for the RoxyAPI astrology API: <!-- BEGIN:ENDPOINTS -->261+<!-- END:ENDPOINTS --> endpoints across 18+ insight domains on one API key, the data layer for insight apps, from Western and Vedic astrology to tarot, numerology and human design.
 
 The source of truth is the live spec at **https://roxyapi.com/api/v2/openapi.json**. The `openapi.json` in this repository is a copy refreshed every day by a GitHub Actions workflow, so a clone, a submodule or a raw file URL always tracks the current API.
 
@@ -37,6 +37,7 @@ The official SDKs are generated from this same spec and published for each langu
 
 One spec describes every domain, in this order:
 
+<!-- BEGIN:DOMAINS -->
 1. Western Astrology
 2. Vedic Astrology
 3. Forecast
@@ -55,6 +56,7 @@ One spec describes every domain, in this order:
 16. Dreams
 17. Angel Numbers
 18. Location and Timezone
+<!-- END:DOMAINS -->
 
 Natal charts, daily horoscopes, compatibility, birth-chart interpretations, Vedic kundli, dashas and panchang, human design bodygraphs, tarot spreads, numerology profiles and more all sit behind the same base URL. Positions come from the NASA JPL DE440 ephemeris, verified against NASA JPL Horizons.
 
@@ -69,7 +71,7 @@ Yes. Every domain is also available as a Remote MCP server, so AI agents can cal
 
 ## How current is this spec?
 
-The workflow in `.github/workflows/refresh-openapi.yml` fetches the live spec daily and commits `openapi.json` only when it changed, so the git history of that one file is the changelog of the API surface. Run it by hand from the Actions tab with the workflow dispatch button.
+The workflow in `.github/workflows/refresh-openapi.yml` fetches the live spec daily, regenerates the domain list and endpoint count in this README from it, and commits only when either changed, so the git history of `openapi.json` is the changelog of the API surface. Run it by hand from the Actions tab with the workflow dispatch button.
 
 ## What license applies?
 
