@@ -1,6 +1,6 @@
 # Astrology API OpenAPI Specification
 
-The OpenAPI 3.1 specification for the RoxyAPI astrology API: <!-- BEGIN:ENDPOINTS -->261+<!-- END:ENDPOINTS --> endpoints across 18+ insight domains on one API key, the data layer for insight apps, from Western and Vedic astrology to tarot, numerology and human design.
+The OpenAPI 3.1 specification for the RoxyAPI astrology API: <!-- BEGIN:ENDPOINTS -->270+<!-- END:ENDPOINTS --> endpoints across 18+ insight domains on one API key, the data layer for insight apps, from Western and Vedic astrology to tarot, numerology and human design.
 
 The source of truth is the live spec at **https://roxyapi.com/api/v2/openapi.json**. The `openapi.json` in this repository is a copy refreshed every day by a GitHub Actions workflow, so a clone, a submodule or a raw file URL always tracks the current API.
 
